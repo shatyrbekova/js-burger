@@ -1,4 +1,4 @@
-
+//var nameYourBurger = confirm('Would you like to create Your Burger?')
 var createPrice= document.getElementsByClassName('create-prices-btn')[0];
 var totalPrice = document.getElementById('total-price');
 
@@ -13,5 +13,5 @@ for (var y=0; y <priceCheck.length; y++){
         initialPrice +=parseInt (priceCheck[y].value)
     }
 }
-     totalPrice.innerHTML = 'Your Price' + "         " + '$' +  initialPrice;
+     totalPrice.innerHTML =  '$' +  initialPrice;
 })
