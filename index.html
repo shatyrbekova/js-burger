@@ -12,6 +12,7 @@
     <div class="crucial-container"> 
        <header>
        <h1>Create Your Burger</h1>
+       <img src="./img/burger-top.png" alt="header-burger">
        </header>
 
   <!-- From here starts form with the ingredients -->
@@ -22,39 +23,60 @@
         <h3>Ingredients</h3> 
        </div>
        
-      <form>
+      <form >
          <ul>
            <li>
                <div class="ingredients">
-                  <img src="./img/cheese.svg" alt="cheese">
-                  <div>Cheese</div>
+                  <img src="./img/cheese.svg" height="60px" alt="cheese">
+                  <span>Cheese</span>
                   <input type="checkbox" id="box-ingredient1" class="sum-check" name="box-ingredient1" value="4">
                   <label for="box-ingredient1">add</label>
                </div>
           </li>
 
             <li>
-              <input type="checkbox" id="box-ingredient2" class="sum-check" name="box-ingredient2" value="4">
-               <label for="box-ingredient2">add</label>
+                <div class="ingredients">
+                    <img src="./img/fried-egg.svg" height="60px" alt="egg">
+                    <span>Egg</span>
+                    <input type="checkbox" id="box-ingredient2" class="sum-check" name="box-ingredient2" value="4">
+                    <label for="box-ingredient2">add</label>
+                </div>
             </li>
          
              <li>
-               <input type="checkbox" id="box-ingredient3"class="sum-check" name="box-ingredient3" value="4">
-               <label for="box-ingredient3">add</label>
+                <div class="ingredients">
+                    <img src="./img/mustard.svg" height="60px" alt="Mustard">
+                   <span>Mustard</span>
+                   <input type="checkbox" id="box-ingredient3"class="sum-check" name="box-ingredient3" value="4">
+                   <label for="box-ingredient3">add</label>
+                </div>
              </li>
          </ul>
          <ul id="list-2nd-block">
              <li>
-                 <input type="checkbox" id="box-ingredient4" class="sum-check" name="box-ingredient4" value="4">
-                 <label for="box-ingredient4">add</label>
+                <div class="ingredients">
+                    <img src="./img/tomato.svg" height="60px" alt="Tomato">
+                    <span>Tomato</span>
+                    <input type="checkbox" id="box-ingredient4" class="sum-check" name="box-ingredient4" value="4">
+                    <label for="box-ingredient4">add</label>
+               </div>
             </li>
+
         <li>
-             <input type="checkbox" id="box-ingredient5" class="sum-check" name="box-ingredient5" value="4">
-             <label for="box-ingredient5">add</label>
+            <div class="ingredients">
+                <img src="./img/lettuce.svg" height="60px" alt="Lettuce">
+                 <span>Lettuce</span>
+                  <input type="checkbox" id="box-ingredient5" class="sum-check" name="box-ingredient5" value="4">
+                  <label for="box-ingredient5">add</label>
+             </div>
         </li>
         <li>
-             <input type="checkbox" id="box-ingredient6" class="sum-check" name="box-ingredient6" value="4">
-             <label for="box-ingredient6">add</label>
+            <div class="ingredients">
+                <img src="./img/ketchup.svg" height="60px" alt="Ketchup">
+                <span>Ketchup</span>
+                <input type="checkbox" id="box-ingredient6" class="sum-check" name="box-ingredient6" value="4">
+                <label for="box-ingredient6">add</label>
+            </div>
          </li>
         </ul>
     </form>
@@ -65,7 +87,7 @@
         <input type="text" id="dis-coupon">
     </div>
      <!-- <button class="create-prices-btn">calculate</button> -->
-     <button type="button" class="btn  btn-warning btn-lg create-prices-btn">calculate</button>
+     <button type="button" class="btn  btn-warning btn-lg create-prices-btn"> <strong>calculate</strong>  </button>
 
 
 </main>

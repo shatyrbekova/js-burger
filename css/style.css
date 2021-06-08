@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
-    /* margin: 0;
-    padding: 0; */
+    margin: 0;
+    padding: 0;
 }
 
 header{
@@ -10,6 +10,12 @@ header{
     align-items: center;
     padding-left: 30px;
     height: 100px;
+    margin-bottom: 45px;
+    
+}
+header img {
+    position: relative;
+    left: 170px;
 }
 
 main {
@@ -17,33 +23,43 @@ main {
 }
 form ul {
     display: inline-block;
+    margin-right: 75px;
 }
 
 form ul li{
     list-style: none;
 }
 
-li {
-    display: flex;
-    align-items: center;
-}
 .crucial-container {
     margin: 0px 200px;
 }  
 
 .ingredients {
-    display: flex;
-    flex-direction: row;
+  margin-top: 15px;
+}
+span{
+    margin: 0px 15px 0px 15px;
 }
 
+input{
+    vertical-align: middle;
+}
 label{
     color:red;
+    margin-left: 5px;
 }
 
 .create-prices-btn {
     margin: 30px 300px 0px 300px;
 }
 
+#dis-coupon{
+    width: 500px;
+    background-color: rgb(219, 219, 139);
+    opacity: .3;
+    border-radius: 15px;
+    border:none;
+}
 footer{
     background-color:rgb(211, 72, 95);
     height:80px;
