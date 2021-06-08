@@ -4,7 +4,7 @@ var createPrice= document.getElementsByClassName('create-prices-btn')[0];
 var totalPrice = document.getElementById('total-price');
 var nameBurger = document.getElementById('name-your-burger');
 
-nameBurger.innerHTML=nameBurgerPrompt;
+nameBurger.innerHTML='Your Burger Name:'+' '+nameBurgerPrompt;
 
 var disCoupon = document.getElementById('dis-coupon');
 createPrice.addEventListener('click', function(){
