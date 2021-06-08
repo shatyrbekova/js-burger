@@ -2,6 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
 
 header{
@@ -11,11 +13,12 @@ header{
     padding-left: 30px;
     height: 100px;
     margin-bottom: 45px;
+    position: relative;
     
 }
 header img {
-    position: relative;
-    left: 170px;
+   position: absolute;
+   right: -50px;
 }
 
 main {
@@ -24,6 +27,7 @@ main {
 form ul {
     display: inline-block;
     margin-right: 75px;
+    padding: 0;
 }
 
 form ul li{
@@ -53,8 +57,11 @@ label{
     margin: 30px 300px 0px 300px;
 }
 
+.coupon-container{
+    margin-top: 60px;
+}
 #dis-coupon{
-    width: 500px;
+    width: 600px;
     background-color: rgb(219, 219, 139);
     opacity: .3;
     border-radius: 15px;
