@@ -1,5 +1,5 @@
 var nameYourBurger = confirm('Would you like to create Your Burger?')
-var nameBurgerPrompt=prompt('Pleaese, Name Your Burger.');
+var nameBurgerPrompt=prompt('Please, Name Your Burger.');
 var createPrice= document.getElementsByClassName('create-prices-btn')[0];
 var totalPrice = document.getElementById('total-price');
 var nameBurger = document.getElementById('name-your-burger');
@@ -12,7 +12,7 @@ createPrice.addEventListener('click', function(){
 
 var initialPrice = 50;
 var  priceCheck  = document.getElementsByClassName('sum-check');
-if (nameYour)
+
 
 for (var y=0; y <priceCheck.length; y++){
 

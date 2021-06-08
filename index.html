@@ -9,100 +9,109 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container center"> 
-       <header>
-       <h1> <strong>Create Your Burger</strong> </h1>
-       <img src="./img/burger-top.png" alt="header-burger">
-       </header>
 
-  <!-- From here starts form with the ingredients -->
-   <main>
+   <div class="col-12">
+         <div class="col-6"> 
+             <!-- Header -->
+             <header class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <h1> <strong>Create Your Burger</strong> </h1>
+                <img  src="./img/burger-top.png" alt="header-burger" class="d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block">
+             </header>
+      
+            <!-- From here starts form with the ingredients -->
+             <main>
 
-    <div>
-        <h2 id="name-your-burger"></h2>
-        <h3>Ingredients</h3> 
-       </div>
+                <div id="container-name-burger">
+                    <h2 id="name-your-burger"></h2>
+                    <h3>Ingredients</h3> 
+                </div>
        
-      <form >
-         <ul>
-           <li>
-               <div class="ingredients">
-                  <img src="./img/cheese.svg" height="60px" alt="cheese">
-                  <span>Cheese</span>
-                  <input type="checkbox" id="box-ingredient1" class="sum-check" name="box-ingredient1" value="4">
-                  <label for="box-ingredient1">add</label>
-               </div>
-          </li>
+                <form >
+                    <ul>
+                        <li>
+                           <div class="ingredients">
+                             <img src="./img/cheese.svg" height="60px" alt="cheese">
+                              <span>Cheese</span>
+                             <input type="checkbox" id="box-ingredient1" class="sum-check" name="box-ingredient1" value="4">
+                             <label for="box-ingredient1">add</label>
+                             </div>
+                       </li>
 
-            <li>
-                <div class="ingredients">
-                    <img src="./img/fried-egg.svg" height="60px" alt="egg">
-                    <span>Egg</span>
-                    <input type="checkbox" id="box-ingredient2" class="sum-check" name="box-ingredient2" value="4">
-                    <label for="box-ingredient2">add</label>
-                </div>
-            </li>
+                        <li>
+                            <div class="ingredients">
+                                <img src="./img/fried-egg.svg" height="60px" alt="egg">
+                                <span>Egg</span>
+                                <input type="checkbox" id="box-ingredient2" class="sum-check" name="box-ingredient2" value="4">
+                                <label for="box-ingredient2">add</label>
+                            </div>
+                        </li>
          
-             <li>
-                <div class="ingredients">
-                    <img src="./img/mustard.svg" height="60px" alt="Mustard">
-                   <span>Mustard</span>
-                   <input type="checkbox" id="box-ingredient3"class="sum-check" name="box-ingredient3" value="4">
-                   <label for="box-ingredient3">add</label>
+                        <li>
+                            <div class="ingredients">
+                                <img src="./img/mustard.svg" height="60px" alt="Mustard">
+                            <span>Mustard</span>
+                            <input type="checkbox" id="box-ingredient3"class="sum-check" name="box-ingredient3" value="4">
+                            <label for="box-ingredient3">add</label>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul id="list-2nd-block">
+                        <li>
+                            <div class="ingredients">
+                                <img src="./img/tomato.svg" height="60px" alt="Tomato">
+                                <span>Tomato</span>
+                                <input type="checkbox" id="box-ingredient4" class="sum-check" name="box-ingredient4" value="4">
+                                <label for="box-ingredient4">add</label>
+                        </div>
+                        </li>
+
+                    <li>
+                        <div class="ingredients">
+                            <img src="./img/lettuce.svg" height="60px" alt="Lettuce">
+                            <span>Lettuce</span>
+                            <input type="checkbox" id="box-ingredient5" class="sum-check" name="box-ingredient5" value="4">
+                            <label for="box-ingredient5">add</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ingredients">
+                            <img src="./img/ketchup.svg" height="60px" alt="Ketchup">
+                            <span>Ketchup</span>
+                            <input type="checkbox" id="box-ingredient6" class="sum-check" name="box-ingredient6" value="4">
+                            <label for="box-ingredient6">add</label>
+                        </div>
+                    </li>
+                    </ul>
+                </form>
+
+                <!-- Btn calculate  and Discount Coupon-->
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 coupon-container">
+                    Discount Coupon
+                    <input type="text" id="dis-coupon">
+                    <label for="dis-coupon"></label>
                 </div>
-             </li>
-         </ul>
-         <ul id="list-2nd-block">
-             <li>
-                <div class="ingredients">
-                    <img src="./img/tomato.svg" height="60px" alt="Tomato">
-                    <span>Tomato</span>
-                    <input type="checkbox" id="box-ingredient4" class="sum-check" name="box-ingredient4" value="4">
-                    <label for="box-ingredient4">add</label>
-               </div>
-            </li>
-
-        <li>
-            <div class="ingredients">
-                <img src="./img/lettuce.svg" height="60px" alt="Lettuce">
-                 <span>Lettuce</span>
-                  <input type="checkbox" id="box-ingredient5" class="sum-check" name="box-ingredient5" value="4">
-                  <label for="box-ingredient5">add</label>
-             </div>
-        </li>
-        <li>
-            <div class="ingredients">
-                <img src="./img/ketchup.svg" height="60px" alt="Ketchup">
-                <span>Ketchup</span>
-                <input type="checkbox" id="box-ingredient6" class="sum-check" name="box-ingredient6" value="4">
-                <label for="box-ingredient6">add</label>
-            </div>
-         </li>
-        </ul>
-    </form>
-
-     <!-- Btn calculate  and Discount Coupon-->
-    <div class="coupon-container">
-        Discount Coupon
-        <input type="text" id="dis-coupon">
-        <label for="dis-coupon"></label>
-    </div>
-     <!-- <button class="create-prices-btn">calculate</button> -->
-     <button type="button" class="btn  btn-warning btn-lg create-prices-btn"> <strong>calculate</strong>  </button>
+                <!-- <button class="create-prices-btn">calculate</button> -->
+                <div class="col-12 col-sm-12 col-lg-12 text-center">
+                    <button type="button" class="btn  btn-warning btn-lg create-prices-btn"> <strong>calculate</strong>  </button>
+                </div>
 
 
-</main>
+             </main>
 
- <footer>
-     <div>Your Price</div>
-     
-     <div id="total-price">$50</div>
-    
-    
- </footer>
+            <footer>
 
-    <script type="text/javascript" src="./js/script.js"></script>
-   </div>
+                <div>Your Price</div>
+                    
+                <div id="total-price">$50</div>
+                    
+            </footer>
+           
+            <script type="text/javascript" src="./js/script.js"></script>
+        </div>
+
+        <div class="col-6 body-bg-color"></div>
+       
+     </div>
     
 </body>
 </html>
